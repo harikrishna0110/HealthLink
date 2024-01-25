@@ -4,17 +4,17 @@ import { useState, useEffect } from 'react';
 import ReviewCard from "/SDP/frontend/src/components/DoctorLIst/ReviewCard";
 
 const DoctorList1 = () => {
-    const [DoctorData, setDoctorData] = useState([]);
-    useEffect(() => {
-      fetch('https://jsonplaceholder.typicode.com/photos')
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          console.log(data);
-          setDoctorData(data);
-        });
-    }, []);
+    // const [DoctorData, setDoctorData] = useState([]);
+    // useEffect(() => {
+    //   fetch('https://jsonplaceholder.typicode.com/photos')
+    //     .then((res) => {
+    //       return res.json();
+    //     })
+    //     .then((data) => {
+    //       console.log(data);
+    //       setDoctorData(data);
+    //     });
+    // }, []);
   
   // const DoctorData = [
   //   {
