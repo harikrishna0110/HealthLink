@@ -1,0 +1,17 @@
+/* src/customStyles.css */
+/* Increase the dot size */
+.slick-dots li button {
+    font-size: 20px; /* Adjust the font-size as needed */
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+  }
+  
+  /* Customize dot colors if needed */
+  .slick-dots li.slick-active button {
+    background-color: #4CAF50; /* Active dot color */
+  }
+  
+  .slick-dots li button:hover {
+    background-color: #555; /* Hovered dot color */
+  }
+  
