@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { services } from "../../assets/data/services";
 import { review } from "../../assets/data/review";
 import Footer from "../Footer/footer";
-// import  "C:\SDP\frontend\src\customStyles.css";
+
 
 const Testimonial = () => {
   const settings = {

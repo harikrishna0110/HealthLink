@@ -49,7 +49,7 @@ const ReviewCard = ({
               </div>
             </div>
             <div class="flex items-center space-x-2">
-              {experience}
+              <h3>Experience : {experience}</h3>
               <svg
                 class="h-5 w-5 text-blue-500"
                 viewBox="0 0 24 24"
@@ -63,24 +63,27 @@ const ReviewCard = ({
                 <line x1="5" y1="12" x2="19" y2="12" />
               </svg>
             </div>
-
-            <div class="flex mt-[10px]">
-              <svg
-                className="h-5 w-5 mr-1"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path
-                  className=""
-                  d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
-                />
-              </svg>
-              {street_address},{city}
+            <div className="mb-5">
+              <span>
+                <div class="flex mt-[10px]">
+                  <svg
+                    className="h-5 w-5 mr-1"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      className=""
+                      d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+                    />
+                  </svg>
+                  {street_address}, {city}
+                </div>
+              </span>
+              <div className="flex items-center space-x-5 ml-6">{state}</div>
             </div>
-            <div className="flex items-end space-x-5">{state}</div>
             <button className="flex-1 rounded-full bg-blue-600 dark:bg-blue-800 text-white dark:text-white antialiased font-bold hover:bg-blue-800 dark:hover:bg-blue-900 px-4 py-2">
               Book Appointment
             </button>
