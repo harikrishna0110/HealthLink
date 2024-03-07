@@ -11,6 +11,11 @@ const ReviewCard = ({
   degree,
   experience,
 }) => {
+  const handleClick = () => {
+    // Perform any action you want here
+    alert("Book Appointment clicked!");
+  };
+
   return (
     <div className="container">
       <div className="max-w-sm mx-auto bg-white rounded-lg overflow-hidden shadow-lg">
@@ -84,7 +89,11 @@ const ReviewCard = ({
               </span>
               <div className="flex items-center space-x-5 ml-6">{state}</div>
             </div>
-            <button className="flex-1 rounded-full bg-blue-600 dark:bg-blue-800 text-white dark:text-white antialiased font-bold hover:bg-blue-800 dark:hover:bg-blue-900 px-4 py-2">
+
+            <button
+              className="flex-1 rounded-full bg-blue-600 dark:bg-blue-800 text-white dark:text-white antialiased font-bold hover:bg-blue-800 dark:hover:bg-blue-900 px-4 py-2"
+              onClick={handleClick} // Attach the handleClick function to the onClick event
+            >
               Book Appointment
             </button>
           </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import aboutcard from "/SDP/frontend/src/assets/images/about-card.png";
-import images4 from "/SDP/frontend/src/assets/images/about.png";
+import images4 from "/SDP/frontend/src/assets/images/doctor1.jpg";
 import { Link } from 'react-router-dom';
 
 const About = () => {
@@ -10,9 +10,9 @@ const About = () => {
             <div className='flex justify-between gap-[50px] lg:gap-[130px] xl:gap-0 flex-col lg:flex-row'>
                 <div className =" relative w-3/4 lg:w-1/2 xl:w-[770px] z-10 order-2 lg:order-1">
                     <img src={images4} alt="About Me"/>
-                    <div className='absolute z-20 bottom-4 w-[200px] md:w-[300px]  right-[-30%] md:right-[-7%] lg:right-[22%]'>
+                    {/* <div className='absolute z-20 bottom-4 w-[200px] md:w-[300px]  right-[-30%] md:right-[-7%] lg:right-[22%]'>
                         <img src={aboutcard} alt="" />
-                    </div>
+                    </div> */}
                 </div>
               ?
 

@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/preline/dist/*.js',
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('../assets/images/icon02.png')",
+      },
       colors :{
+       
         primaryColor:"#0067FF",
         yellowColor:"#FEB60D",
         purpleColor:"#9771FF",
@@ -19,6 +25,6 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [ require('preline/plugin'),],
 }
 

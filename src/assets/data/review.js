@@ -3,7 +3,7 @@ import pat1 from '/SDP/frontend/src/assets/images/John_Morgan.jpg';
 export const review = [
     {
       name: `John Morgan`,
-      img: 'https://static.vecteezy.com/system/resources/previews/003/491/890/non_2x/closeup-face-portrait-of-pretty-blonde-girl-with-fresh-skin-horizontal-image-free-photo.jpg',
+      img: {pat1},
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, saliqua.`
     },
     {
