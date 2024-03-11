@@ -43,7 +43,7 @@ export const doctordata = [
       mobile_no: 8745125487,
       email: "salah@gmail.com",
       password: "$2a$10$g0WgxezeTPa6vFhHs/W1jutlCXSDQFsbKA04Iyk4258.kX89N7Hge",
-      department: "Cardiologist",
+      department: "Cardiology",
       experience: "5",
       degree: ["MBBS", "MS(Cardio)"],
       fees: 1000,

@@ -30,7 +30,7 @@ export const services = [
     textColor: "#FEB60D",
   },
   {
-    name: "Burn Treatment",
+    name: "Cardiology",
     desc: "World-class care for everyone. Our health System offers unmatched, expert health care. From the lab to the clinic.",
     bgColor: "rgba(151, 113, 255, .2)",
     textColor: "#9771FF",

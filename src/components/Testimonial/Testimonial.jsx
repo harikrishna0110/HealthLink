@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { services } from "../../assets/data/services";
 import { review } from "../../assets/data/review";
 import Footer from "../Footer/footer";
 

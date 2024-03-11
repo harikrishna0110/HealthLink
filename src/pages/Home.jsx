@@ -9,9 +9,12 @@ import Footer from "../components/Footer/footer";
 import Testimonial from "../components/Testimonial/Testimonial";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import About from "../components/About/About";
+import Bgvdo from "../components/Bgvdo";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
    
@@ -30,7 +33,7 @@ const Home = () => {
                       jnsdkjf i onoifne iafisfonsdfin
                     </p>
 
-                    <button className="btn">Request an Appointment</button>
+                    <button className="btn" onClick={() => navigate("/bookaptmnt")}>Request an Appointment</button>
                   </div>
                   {/* -------------hero counter-*/}
                   <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
@@ -156,7 +159,9 @@ const Home = () => {
       </section>
       <About />
       {/* -------services section----------- */}
-      <section>
+      <section> <Bgvdo/></section>
+     
+      {/* <section>
         <div className="container">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center"> Our Medical Services</h2>
@@ -171,7 +176,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*---------FAQ Section-----------*/}
       <section>
         <div className="container">

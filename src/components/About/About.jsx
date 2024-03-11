@@ -1,9 +1,10 @@
 import React from 'react';
 import aboutcard from "/SDP/frontend/src/assets/images/about-card.png";
 import images4 from "/SDP/frontend/src/assets/images/doctor1.jpg";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <section>
         <div className='container'>
@@ -23,13 +24,14 @@ const About = () => {
                     <p className='text_para'>Doctors play a crucial. These highly skilled professionals dedicate years to rigorous education and training to acquire the knowledge. Doctors work in diverse specialties, ranging  who provide comprehensive healthcare to specialists focusing on specific organs or medical fields. </p>
                     <p className='text_para mt-[30px]'>The trust placed in doctors is significant, as individuals rely on them not only for medical expertise but also for guidance, empathy, and support during times, do enhancing the quality of life for individuals ating to the overall well-bein ciety.</p>
 <div className='justify-center'>
-<a href=''><button className='btn'> Learn More</button></a>
+<button className='btn' onClick={()=>navigate("/learnmore")}> Learn More</button>
 </div>
                    
                     {/* <Link to = "/doctor"></Link> */}
                 </div>
             </div>
         </div>
+        
     </section>
   )
 }
